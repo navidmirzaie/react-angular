@@ -7,15 +7,12 @@ export const environment = {
   posterUrl: "https://image.tmdb.org/t/p/original",
   apiUrl: "https://api.themoviedb.org/3",
   apiKey: "",
+  popular: `https://api.themoviedb.org/3/movie/popular`,
+  topRated: `https://api.themoviedb.org/3/movie/top_rated`,
+  upcoming: `https://api.themoviedb.org/3/movie/upcoming`,
+  nowPlaying: `https://api.themoviedb.org/3/movie/now_playing`,
+  genres: `https://api.themoviedb.org/3/genre/movie/list`
 };
-
-export const endpoints = {
-  popular: `${environment.apiUrl}/movie/popular`,
-  topRated: `${environment.apiUrl}/movie/top_rated`,
-  upcoming: `${environment.apiUrl}/movie/upcoming`,
-  nowPlaying: `${environment.apiUrl}/movie/now_playing`,
-  genres: `${environment.apiUrl}/genre/movie/list`
-}
 
 /*
  * For easier debugging in development mode, you can import the following file

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpParams} from "@angular/common/http";
 import {Observable} from "rxjs";
-import { environment, endpoints } from "../environments/environment";
+import { environment } from "../environments/environment";
 import {IMovieResponses} from "./IMovieResponses";
 
 @Injectable({
@@ -20,23 +20,23 @@ export class MovieService {
   }
 
   getGenres() {
-    return this.request(endpoints.genres);
+    return this.request(environment.genres);
   }
 
   getPopular() {
-    return this.request(endpoints.popular);
+    return this.request(environment.popular);
   }
 
   getTopRated() {
-    return this.request(endpoints.topRated);
+    return this.request(environment.topRated);
   }
 
   getUpcoming() {
-    return this.request(endpoints.upcoming);
+    return this.request(environment.upcoming);
   }
 
   getNowPlaying() {
-    return this.request(endpoints.nowPlaying);
+    return this.request(environment.nowPlaying);
   }
 
 
