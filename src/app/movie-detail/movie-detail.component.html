@@ -1,0 +1,14 @@
+<div *ngIf="movie">
+  <div style="background:url('{{environment.posterUrl + movie.backdrop_path}}'); background-position: center center; background-size: cover; background-repeat: no-repeat; width: 100%; height: 400px;">
+    <div class="inner custom-bg p-10 flex flex-col lg:flex-row gap-4">
+      <div class="poster w-full">
+        <img src="{{environment.posterUrl + movie.poster_path}}" width="auto" class="rounded-md" loading="lazy" alt="" title="{{ movie.title }}"/>
+      </div>
+      <div class="movie-content text-white">
+        <h3 class="text-blue-200 text-2xl">{{movie.title}}</h3>
+        <p class="text-base mt-2">{{movie.overview}}</p>
+        {{movie.genre_ids}}
+      </div>
+    </div>
+  </div>
+</div>

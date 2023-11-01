@@ -1,10 +1,21 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
+// The MoviesList of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  posterUrl: "https://image.tmdb.org/t/p/original",
+  apiUrl: "https://api.themoviedb.org/3",
+  apiKey: "1563b464da8d37cf88cd5eaec8aa5419",
 };
+
+export const endpoints = {
+  popular: `${environment.apiUrl}/movie/popular`,
+  topRated: `${environment.apiUrl}/movie/top_rated`,
+  upcoming: `${environment.apiUrl}/movie/upcoming`,
+  nowPlaying: `${environment.apiUrl}/movie/now_playing`,
+  genres: `${environment.apiUrl}/genre/movie/list`
+}
 
 /*
  * For easier debugging in development mode, you can import the following file

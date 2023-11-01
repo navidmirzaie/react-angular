@@ -1,0 +1,27 @@
+@tailwind components;
+
+@layer components{
+  :host {
+    @apply flex rounded-b-md flex-col relative;
+    width: 12rem;
+  }
+
+  .cover-image {
+    @apply rounded-md;
+  }
+
+  .info {
+    @apply relative flex flex-col p-5;
+  }
+
+  .title {
+    @apply font-bold text-sm;
+  }
+
+  .release-date {
+    @apply text-xs;
+  }
+
+}
+
+

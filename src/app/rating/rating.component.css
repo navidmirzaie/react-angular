@@ -1,0 +1,28 @@
+@tailwind components;
+
+@layer components {
+  .rating,
+  .rating.small {
+    @apply rounded-full flex items-center justify-center bg-gray-800 text-white absolute -top-6 text-xs border-solid;
+    width: 38px;
+    height: 38px;
+  }
+
+  .rating.large {
+    width: 60px;
+    height: 60px;
+  }
+
+  .great {
+    @apply border-2 border-green-700;
+  }
+
+  .bad {
+    @apply border-2 border-red-700;
+  }
+
+  .medium {
+    @apply border-2 border-yellow-400;
+  }
+}
+

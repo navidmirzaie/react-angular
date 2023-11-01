@@ -1,0 +1,12 @@
+<!--
+    In this Movie component we show how the movie will look like
+-->
+<div (click)="onMovieSelected()" class="flex flex-col gap-2 hover: cursor-pointer">
+  <img [src]="getPoster()" class="cover-image mr-2" loading="lazy" alt="" title="{{ movie.title }}"/>
+  <div class="info">
+    <h5 class="title">{{ movie.title}}</h5>
+    <span class="release-date">{{ movie.release_date | date:'dd-MM-yyyy' }} </span>
+    <app-rating [movie]="movie"></app-rating>
+  </div>
+</div>
+

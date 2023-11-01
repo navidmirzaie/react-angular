@@ -1,0 +1,11 @@
+@tailwind components;
+
+@layer components {
+  li {
+    @apply text-yellow-400 p-2;
+  }
+
+  li:hover {
+    @apply bg-yellow-400 rounded text-gray-900;
+  }
+}
