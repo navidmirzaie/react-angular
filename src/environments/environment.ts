@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   posterUrl: "https://image.tmdb.org/t/p/original",
   apiUrl: "https://api.themoviedb.org/3",
-  apiKey: "1563b464da8d37cf88cd5eaec8aa5419",
+  apiKey: "",
 };
 
 export const endpoints = {
